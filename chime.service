@@ -1,0 +1,11 @@
+[Unit]
+Description=Doorbell chime
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/chime/chime/chime.py /home/chime/chime/config.yml
+User=chime
+
+[Install]
+WantedBy=multi-user.target

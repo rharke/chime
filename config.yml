@@ -1,0 +1,21 @@
+#
+# Configuration options:
+#  port (int, default=8000): TCP port for the web server to listen on.
+#  mixer:
+#   frequency (int, default=0): Frequency to mix audio at; passed to pygame. Default is 0, which
+#    uses the pygame default of 22050 Hz.
+#   size (int, default=0): Bits per channel; passed to pygame. Default is 0, which uses the pygame
+#    default of 16 bits per channel.
+#   channels (int, default=0): Number of channels; passed to pygame. Default is 0, which uses the
+#    pygame default of 2 channels (stereo).
+#   buffer (int, default=0): Size of the mixing buffer; passed to pygame. Default is 0, which uses
+#    the pygame default.
+#  chime_path (string, defaults to same path as chime.py): Directory containing the chime sound
+#    files.
+#  chimes: (dict of str:str): Mapping from chime names (used in query string) to chime sound files.
+#
+# In the minimal case, all you really need to specify is the chimes dictionary.
+#
+
+chimes:
+ doorbell: familymart_chime.wav
